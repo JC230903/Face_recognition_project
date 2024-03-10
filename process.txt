@@ -1,0 +1,51 @@
+ the commands:
+
+Navigate to the Project Directory:
+
+bash
+Copy code
+cd /path/to/Face_recognition
+Create and Activate Virtual Environment:
+
+bash
+Copy code
+python -m venv face_recognition_env
+source face_recognition_env/bin/activate
+Check Installed Packages:
+
+bash
+Copy code
+pip list
+Ensure that pip and setuptools are installed with the required versions.
+
+Install Dependencies:
+
+bash
+Copy code
+pip install -r requirements.txt
+Run the Face Recognition System:
+
+bash
+Copy code
+python main.py
+This will initiate the face recognition system, performing face filtering, encoding, and predictions.
+
+Capture Your Own Faces:
+
+Create a folder with your name.
+Inside the folder, create separate directories for training and testing datasets.
+Run the following command to capture your faces:
+bash
+Copy code
+python capture.py
+Use 'c' to capture pictures using the camera and 'q' to quit the capture loop.
+Add the captured images to the training dataset and include a few in the testing dataset.
+Train and Test the Face Recognition System:
+
+Run python main.py again to train the model with the updated datasets.
+The system will predict faces based on the trained model.
+By following these steps, you'll create and activate a virtual environment, install required dependencies, and run the face recognition system. Additionally, the system allows you to capture and add your own faces for personalized recognition.
+
+
+
+
